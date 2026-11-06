@@ -1,17 +1,24 @@
 
-// Show the current year in the browser console
+// Display the current year in the footer
+
+const yearElements = document.querySelectorAll(".year");
+
+yearElements.forEach(element => {
+    element.textContent = new Date().getFullYear();
+});
+
+// Welcome message
+
 console.log("Welcome to Kris Kumar's Portfolio!");
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", function(event) {
-        const target = document.querySelector(this.getAttribute("href"));
+// Highlight the current page in the navigation
 
-        if (target) {
-            event.preventDefault();
-            target.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
-    });
+const currentPage = window.location.pathname.split("/").pop();
+
+document.querySelectorAll(".navbar a").forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+        link.classList.add("active");
+    }
 });

@@ -139,7 +139,7 @@ header {
     background-color: #5e648c;
 }
 
-/* Home page word cards */
+/* Home Page Cards */
 
 .words-section,
 .interests-section {
@@ -184,7 +184,7 @@ header {
 }
 
 /* =========================
-   OTHER WEBSITE PAGES
+   OTHER PAGES
 ========================= */
 
 .section {
@@ -218,7 +218,56 @@ header {
     margin-bottom: 12px;
 }
 
-/* Three words on About page */
+/* Lists */
+
+.project-card ul,
+.project-card ol {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.project-card li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+
+.project-card a {
+    color: #777da7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+/* About Page Three Words */
 
 .three-words {
     display: flex;
@@ -237,39 +286,6 @@ header {
 .three-words h3 {
     color: #777da7;
     margin-bottom: 10px;
-}
-
-/* Images on other pages */
-
-.project-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-/* Lists on other pages */
-
-.project-card ul,
-.project-card ol {
-    padding-left: 25px;
-    margin-bottom: 15px;
-}
-
-.project-card li {
-    margin-bottom: 8px;
-}
-
-/* Links on other pages */
-
-.project-card a {
-    color: #777da7;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.project-card a:hover {
-    text-decoration: underline;
 }
 
 /* =========================

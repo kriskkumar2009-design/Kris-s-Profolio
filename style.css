@@ -1,5 +1,8 @@
 
-/* General Page Styling */
+/* =========================
+   GENERAL STYLING
+========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +20,10 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Bar */
+/* =========================
+   NAVIGATION BAR
+========================= */
+
 header {
     background-color: #25283d;
     padding: 18px 7%;
@@ -36,6 +42,7 @@ header {
     font-size: 25px;
 }
 
+.navbar ul,
 .nav-links {
     display: flex;
     list-style: none;
@@ -43,6 +50,7 @@ header {
     flex-wrap: wrap;
 }
 
+.navbar ul a,
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -50,12 +58,17 @@ header {
     transition: 0.3s;
 }
 
+.navbar ul a:hover,
+.navbar ul a.active,
 .nav-links a:hover,
 .nav-links a.active {
     color: #a9b5f5;
 }
 
-/* Home Hero Section */
+/* =========================
+   HOME PAGE
+========================= */
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -81,7 +94,6 @@ header {
 .hero h1 {
     font-size: 45px;
     margin-bottom: 10px;
-    color: #25283d;
 }
 
 .hero h1 span {
@@ -101,7 +113,6 @@ header {
     margin-bottom: 30px;
 }
 
-/* Profile Image */
 .hero-image {
     flex: 0 0 300px;
 }
@@ -114,7 +125,6 @@ header {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Main Button */
 .main-button {
     display: inline-block;
     background-color: #777da7;
@@ -129,8 +139,10 @@ header {
     background-color: #5e648c;
 }
 
-/* Three Words Section */
-.words-section {
+/* Home page word cards */
+
+.words-section,
+.interests-section {
     padding: 65px 10%;
     text-align: center;
 }
@@ -139,39 +151,9 @@ header {
 .interests-section h2 {
     font-size: 30px;
     margin-bottom: 35px;
-    color: #25283d;
 }
 
-.word-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.word-card {
-    background-color: white;
-    padding: 30px 20px;
-    border-radius: 12px;
-    flex: 1;
-    min-width: 200px;
-    max-width: 300px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-}
-
-.word-card h3 {
-    color: #777da7;
-    font-size: 23px;
-    margin-bottom: 10px;
-}
-
-/* Interests Section */
-.interests-section {
-    padding: 65px 10%;
-    background-color: #e9ecf8;
-    text-align: center;
-}
-
+.word-container,
 .interest-container {
     display: flex;
     justify-content: center;
@@ -179,6 +161,7 @@ header {
     flex-wrap: wrap;
 }
 
+.word-card,
 .interest-card {
     background-color: white;
     padding: 30px 20px;
@@ -189,27 +172,130 @@ header {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
+.word-card h3,
 .interest-card h3 {
     color: #777da7;
     font-size: 21px;
     margin-bottom: 10px;
 }
 
-/* Footer */
+.interests-section {
+    background-color: #e9ecf8;
+}
+
+/* =========================
+   OTHER WEBSITE PAGES
+========================= */
+
+.section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.section > h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #25283d;
+}
+
+.project-card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.project-card h3 {
+    color: #777da7;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 12px;
+}
+
+/* Three words on About page */
+
+.three-words {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.three-words > div {
+    flex: 1;
+    min-width: 180px;
+    background-color: #f7f8fc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.three-words h3 {
+    color: #777da7;
+    margin-bottom: 10px;
+}
+
+/* Images on other pages */
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Lists on other pages */
+
+.project-card ul,
+.project-card ol {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.project-card li {
+    margin-bottom: 8px;
+}
+
+/* Links on other pages */
+
+.project-card a {
+    color: #777da7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     background-color: #25283d;
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 14px;
+    margin-top: 40px;
 }
 
-/* Mobile Layout */
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
 @media screen and (max-width: 800px) {
+
     .navbar {
         flex-direction: column;
     }
 
+    .navbar ul,
     .nav-links {
         justify-content: center;
     }
@@ -232,13 +318,25 @@ footer {
     .hero h1 {
         font-size: 35px;
     }
+
+    .three-words {
+        flex-direction: column;
+    }
+
+    .section {
+        margin: 25px auto;
+        padding: 15px;
+    }
 }
 
 @media screen and (max-width: 500px) {
+
+    .navbar ul,
     .nav-links {
         gap: 12px;
     }
 
+    .navbar ul a,
     .nav-links a {
         font-size: 12px;
     }
@@ -246,5 +344,9 @@ footer {
     .words-section h2,
     .interests-section h2 {
         font-size: 25px;
+    }
+
+    .project-card {
+        padding: 20px;
     }
 }
